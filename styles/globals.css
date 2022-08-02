@@ -26,8 +26,55 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  position: relative;
 }
 
+.logout {
+  position: absolute;
+  right: 48px;
+}
+
+.hero {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-color: #fff;
+  color: rgb(25, 25, 25);
+  height: 100vh;
+  padding: 128px;
+}
+h1 {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  max-width: 50%;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.btn-wrap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 24px;
+  margin-top: 48px;
+  max-width: 400px;
+  
+}
+.btn-wrap button {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: none;
+  border: 1px solid #fff;
+  padding: 16px 24px;
+  font-size: 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  
+}
 
 * {
   box-sizing: border-box;

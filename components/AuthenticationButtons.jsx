@@ -1,4 +1,5 @@
 import {withAuthInfo, useLogoutFunction, useRedirectFunctions} from '@propelauth/react';
+import { Hero } from './Hero';
 
 // isLoggedIn is automatically injected from withAuthInfo
 function AuthenticationButtons({isLoggedIn}) {
@@ -10,12 +11,13 @@ function AuthenticationButtons({isLoggedIn}) {
             {/* <button onClick={redirectToAccountPage}>Account</button>
             <button onClick={() => logoutFn()}>Logout</button> */}
             <h6 className='logo'>Alfredo.</h6>
+            <a className='logout' onClick={logoutFn}>Log out</a>
         </div>
     } else {
-        return <div>
-            <button onClick={redirectToSignupPage}>Signup</button>
-            <button onClick={redirectToLoginPage}>Login</button>
-        </div>
+        return <Hero 
+            redirectToLoginPage={redirectToLoginPage}
+            redirectToSignupPage={redirectToSignupPage}
+        />
     }
 }
 
