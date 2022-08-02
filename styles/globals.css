@@ -24,15 +24,26 @@ a {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #fff;
   position: relative;
+  padding: 0 80px;
+}
+.header .contact {
+  font-size: 16px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.header .contact a {
+  font-weight: bold;
+}
+.header .contact a:hover {
+  text-decoration: underline;
 }
 
 .logout {
-  position: absolute;
-  right: 48px;
 }
 
 .hero {
@@ -86,6 +97,19 @@ h1 {
 }
 a {
   cursor: pointer;
+}
+
+.contact {
+  font-size: 16px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.contact a {
+  font-weight: bold;
+}
+.contact a:hover {
+  text-decoration: underline;
 }
 
 * {

@@ -1,7 +1,11 @@
 import React from 'react'
+import { Contact } from './Contact'
 
 export const Hero = ({redirectToSignupPage,redirectToLoginPage}) => {
-  return (<div className='hero'>
+  return (
+  <>
+  <Contact/>
+  <div className='hero'>
     <h1>Alfredo Exhibition Expirience</h1>
     <p className="subtitle">The virtual recreation of a physical three dimensional (3D) exhibition or museum allows a visitor to navigate in this virtual scenario in a way closer to reality.</p>
     <div className='btn-wrap'>
@@ -9,5 +13,6 @@ export const Hero = ({redirectToSignupPage,redirectToLoginPage}) => {
             <button onClick={redirectToLoginPage}>Login</button>
     </div>
     </div>
+</>
   )
 }

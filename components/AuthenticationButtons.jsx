@@ -10,6 +10,7 @@ function AuthenticationButtons({isLoggedIn}) {
         return <div className='header' style={{position: 'fixed', width: '100vw', height: '60px', background: '#000'}}>
             {/* <button onClick={redirectToAccountPage}>Account</button>
             <button onClick={() => logoutFn()}>Logout</button> */}
+            <div className='contact'>Let’s talk <a href='mailto:mail@alfredo.website'>mail@alfredo.website</a></div>
             <h6 className='logo'>Alfredo.</h6>
             <a className='logout' onClick={logoutFn}>Log out</a>
         </div>
