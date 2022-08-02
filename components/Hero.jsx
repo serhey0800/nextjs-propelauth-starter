@@ -7,7 +7,8 @@ export const Hero = ({redirectToSignupPage,redirectToLoginPage}) => {
   <Contact/>
   <div className='hero'>
     <h1>Alfredo Exhibition Expirience</h1>
-    <p className="subtitle">The virtual recreation of a physical three dimensional (3D) exhibition or museum allows a visitor to navigate in this virtual scenario in a way closer to reality.</p>
+    <p className="subtitle">We create virtual, interactive 3D exhibitions around the world.</p>
+    <p style={{marginTop: '24px'}}>Register to visit the demo</p>
     <div className='btn-wrap'>
             <button onClick={redirectToSignupPage}>Signup</button>
             <button onClick={redirectToLoginPage}>Login</button>
