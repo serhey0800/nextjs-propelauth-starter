@@ -64,16 +64,28 @@ h1 {
   
 }
 .btn-wrap button {
-  background-color: #000;
-  color: #fff;
+  
   text-decoration: none;
   box-shadow: none;
-  border: 1px solid #fff;
+  
   padding: 16px 24px;
   font-size: 18px;
   border-radius: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
   
+}
+
+.btn-wrap button:hover {
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+a {
+  cursor: pointer;
 }
 
 * {
